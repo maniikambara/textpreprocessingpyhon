@@ -17,6 +17,7 @@ Selain itu, proyek ini menggunakan daftar stopwords tambahan dari [masdevid/ID-S
 1. Clone repositori ini ke perangkat lokal Anda:
 ```bash
 git clone https://github.com/your-username/text-preprocessing-sastrawi.git
+
 cd text-preprocessing-sastrawi
 ```
 2. Install library yang dibutuhkan:
