@@ -1,0 +1,56 @@
+Doc 1
+Isi :
+elearning di PTIIK di atas jam 6 malam kok selalu gak bisa dibuka ya?
+
+Tokenisasi :
+elearning di ptiik di atas jam 6 malam kok selalu gak bisa dibuka ya
+
+Filtering :
+elearning ptiik jam 6 malam gak dibuka
+
+Stemming :
+elearning ptiik jam 6 malam gak buka
+
+
+Doc 2
+Isi :
+ub tidak punya lahan parkir yang layak. Dan jalanan terlalu ramai karena dibuka untuk umum. Seperti jalan tol saja. Brawijaya oh brawijaya
+
+Tokenisasi :
+ub tidak punya lahan parkir yang layak dan jalanan terlalu ramai karena dibuka untuk umum seperti jalan tol saja brawijaya oh brawijaya
+
+Filtering :
+ub lahan parkir layak jalanan ramai dibuka jalan tol brawijaya brawijaya
+
+Stemming :
+ub lahan parkir layak jalan ramai buka jalan tol brawijaya brawijaya
+
+
+Doc 3
+Isi :
+Kelas Arsitektur dan Organisasi Komputer penuh, apakah tidak dibuka kelas lagi. Rugi kalau saya bisa ngambil 24 SKS tapi baru 18 SKS yang terpenuhi
+
+Tokenisasi :
+kelas arsitektur dan organisasi komputer penuh apakah tidak dibuka kelas lagi rugi kalau saya bisa ngambil 24 sks tapi baru 18 sks yang terpenuhi
+
+Filtering :
+kelas arsitektur organisasi komputer penuh dibuka kelas rugi ngambil 24 sks 18 sks terpenuhi
+
+Stemming :
+kelas arsitektur organisasi komputer penuh buka kelas rugi ngambil 24 sks 18 sks penuh
+
+
+Doc 4
+Isi :
+Informasi tata cara daftar ulang bagi mahasiswa baru PTIIK kurang jelas. Sehingga ketika tanggal terakhir syarat penyerahan berkas daftar ulang, banyak mahasiswa baru yang tidak membawa salah satu syarat daftar ulangnya.
+
+Tokenisasi :
+informasi tata cara daftar ulang bagi mahasiswa baru ptiik kurang jelas sehingga ketika tanggal terakhir syarat penyerahan berkas daftar ulang banyak mahasiswa baru yang tidak membawa salah satu syarat daftar ulangnya
+
+Filtering :
+informasi tata daftar ulang mahasiswa ptiik tanggal syarat penyerahan berkas daftar ulang mahasiswa membawa salah syarat daftar ulangnya
+
+Stemming :
+informasi tata daftar ulang mahasiswa ptiik tanggal syarat serah berkas daftar ulang mahasiswa bawa salah syarat daftar ulang
+
+
