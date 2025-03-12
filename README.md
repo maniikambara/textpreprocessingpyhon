@@ -38,8 +38,11 @@ Teks Awal:
 elearning di PTIIK di atas jam 6 malam kok selalu gak bisa dibuka ya?
 
 Setelah Diproses:
+
 Tokenisasi: elearning di ptiik di atas jam 6 malam kok selalu gak bisa dibuka ya
+
 Filtering: elearning ptiik jam 6 malam gak dibuka
+
 Stemming: elearning ptiik jam 6 malam gak buka
 
 ## Struktur Folder
