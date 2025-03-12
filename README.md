@@ -56,6 +56,7 @@ text-preprocessing-sastrawi/
 
 ## Kredit
 Sastrawi - Library stemming untuk Bahasa Indonesia.
+
 masdevid/ID-Stopwords - Daftar kata-kata stopwords tambahan untuk Bahasa Indonesia.
 
 ## Lisensi
