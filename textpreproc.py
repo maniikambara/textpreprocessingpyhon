@@ -3,9 +3,9 @@ from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 from Sastrawi.StopWordRemover.StopWordRemoverFactory import StopWordRemoverFactory
 
 # Fungsi untuk membaca isi file per baris
-def read_lines(filepath):
+def baca_input(filepath):
     with open(filepath, 'r', encoding='utf-8') as file:
-        return [line.strip() for line in file if line.strip()]  # Mengabaikan baris kosong
+        return [line.strip() for line in file if line.strip()]
 
 # Fungsi untuk menulis hasil ke file
 def write(filepath, content):
@@ -14,13 +14,12 @@ def write(filepath, content):
 
 # Fungsi tokenisasi
 def tokenisasi(text):
-    return re.findall(r'\b\w+\b', text.lower())  # Split kata non simbol
+    return re.findall(r'\b\w+\b', text.lower())
 
 # Fungsi filtering dengan tambahan stopword
 def filtering(text, stopword_tambahan):
     stop_factory = StopWordRemoverFactory()
     default_stopwords = stop_factory.get_stop_words()
-    # Gabungkan stopword bawaan dan tambahan, semua lowercase
     stopwords = set(word.lower() for word in default_stopwords + stopword_tambahan)
     tokens = tokenisasi(text)
     # Filter token
@@ -36,7 +35,7 @@ def stemming(tokens):
 def file_stopword(filepath):
     try:
         with open(filepath, 'r', encoding='utf-8') as file:
-            return [line.strip().lower() for line in file if line.strip()]  # Pastikan lowercase
+            return [line.strip().lower() for line in file if line.strip()]
     except FileNotFoundError:
         print("File stopword tambahan tidak ditemukan.")
         return []
@@ -47,15 +46,15 @@ if __name__ == "__main__":
     output_file = 'output.txt'
 
     # Baca data input dan stopword tambahan
-    list_kalimat = read_lines(input_file)
+    list_kalimat = baca_input(input_file)
     stopword_tambahan = file_stopword(stopword_file)
 
     hasil_akhir = ""
 
     for idx, kalimat in enumerate(list_kalimat):
         tokens = tokenisasi(kalimat)
-        filtered_tokens = filtering(kalimat, stopword_tambahan)
-        stemmed_tokens = stemming(filtered_tokens)
+        kalimat_filter = filtering(kalimat, stopword_tambahan)
+        kalimat_stem = stemming(kalimat_filter)
 
         hasil_akhir += f"""Doc {idx + 1}
 Isi :
@@ -65,11 +64,10 @@ Tokenisasi :
 {' '.join(tokens)}
 
 Filtering :
-{' '.join(filtered_tokens)}
+{' '.join(kalimat_filter)}
 
 Stemming :
-{' '.join(stemmed_tokens)}
-
+{' '.join(kalimat_stem)}
 
 """
 
